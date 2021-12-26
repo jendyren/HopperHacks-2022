@@ -63,7 +63,6 @@ a:active, a:focus, a:hover, a:link, a:visited {
 	text-decoration: none
 }
 
-
 body h1,
 body h2 {
 	font-family: HeroBold;
@@ -107,6 +106,24 @@ body .clouds-bg{
 	}
 }
 
+.rectangle {
+  height: 50px;
+  width: 35vw;
+  background-color: #FA91D4;
+  color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  font-family: HeroBold;
+  font-size: 1.5vw;
+}
+
+#cover #cover-desktop #date-desktop {
+    position: absolute;
+    top: 23vw;
+    left: 32vw;
+}
 
 #cover .navbar-wrap {
 	display: -webkit-box;
