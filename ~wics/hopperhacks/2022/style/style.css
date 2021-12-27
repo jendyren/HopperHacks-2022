@@ -36,7 +36,7 @@ html {
 	-webkit-tap-highlight-color: transparent;
 	width: 100vw;
 	scroll-behavior: smooth;
-	cursor: url("/~wics/hopperhacks/2022/images/cursor.png"), auto;
+	cursor: url("/~wics/hopperhacks/2022/images/blueCursor.png"), default;
 }
 
 *,:after,:before {
@@ -230,17 +230,17 @@ body .section#about {
 	}
 }
 
-body .section#tracks {
+body .section#logistics {
 	min-height: 70.6vw
 }
 
 @media (max-width:576px) {
-	body .section#tracks {
+	body .section#logistics {
 		min-height: 207vw
 	}
 }
 
-#tracks .content {
+#logistics .content {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -257,12 +257,12 @@ body .section#tracks {
 }
 
 @media (max-width:576px) {
-	#tracks .content {
+	#logistics .content {
 		margin-top: 3vw
 	}
 }
 
-#tracks .content #tracks-mobile-div {
+#logistics .content #logistics-mobile-div {
 	display: none;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
@@ -270,13 +270,13 @@ body .section#tracks {
 	flex-direction: column
 }
 
-#tracks .content #tracks-mobile-div .track-div:hover {
+#logistics .content #logistics-mobile-div .logistic-div:hover {
 	-webkit-transform: translateY(3px);
 	-ms-transform: translateY(3px);
 	transform: translateY(3px)
 }
 
-#tracks .content #tracks-mobile-div .track-div .track-header-div {
+#logistics .content #logistics-mobile-div .logistic-div .logistic-header-div {
 	margin-bottom: 1vw;
 	padding-left: 1vw;
 	padding-right: 1vw;
@@ -284,25 +284,25 @@ body .section#tracks {
 }
 
 @media (max-width:576px) {
-	#tracks .content #tracks-mobile-div .track-div .track-header-div {
+	#logistics .content #logistics-mobile-div .logistic-div .logistic-header-div {
 		margin-top: 3vw
 	}
 }
 
-#tracks .content #tracks-mobile-div .track-div .track-header-div .track-label {
+#logistics .content #logistics-mobile-div .logistic-div .logistic-header-div .logistic-label {
 	font-size: 5vw;
 	margin-top: -3vw
 }
 
 @media (max-width:576px) {
-	#tracks .content #tracks-mobile-div {
+	#logistics .content #logistics-mobile-div {
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex
 	}
 }
 
-#tracks .content .track-row {
+#logistics .content .logistic-row {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -316,17 +316,17 @@ body .section#tracks {
 	justify-content: space-around
 }
 
-#tracks .content .track-row#track-row-2 {
+#logistics .content .logistic-row#logistic-row-2 {
 	margin-top: 6vw
 }
 
 @media (max-width:576px) {
-	#tracks .content .track-row {
+	#logistics .content .logistic-row {
 		display: none
 	}
 }
 
-#tracks .content .track-div {
+#logistics .content .logistic-div {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -341,54 +341,54 @@ body .section#tracks {
 }
 
 @media (max-width:576px) {
-	#tracks .content .track-div {
+	#logistics .content .logistic-div {
 		margin: 4vw
 	}
 }
 
-#tracks .content .track-div:hover {
+#logistics .content .logistic-div:hover {
 	cursor: pointer;
 	-webkit-transform: translateY(-5px);
 	-ms-transform: translateY(-5px);
 	transform: translateY(-5px)
 }
 
-#tracks .content .track-div .track-image {
+#logistics .content .logistic-div .logistic-image {
 	width: 23vw;
 	margin-top: 2.5vw;
 	position: relative
 }
 
 @media (max-width:576px) {
-	#tracks .content .track-div .track-image {
+	#logistics .content .logistic-div .logistic-image {
 		width: 53vw
 	}
 }
 
-#tracks .content .track-div #health-track-label {
+#logistics .content .logistic-div #health-logistic-label {
 	background-color: #c1e1ec
 }
 
-#tracks .content .track-div #com-track-label {
+#logistics .content .logistic-div #involved-logistic-label {
 	background-color: #ffa4be
 }
 
-#tracks .content .track-div #edu-track-label {
+#logistics .content .logistic-div #prize-logistic-label {
 	background-color: #a9c2b1
 }
 
-#tracks .content .track-div #sus-track-label {
+#logistics .content .logistic-div #schedule-logistic-label {
 	background-color: #ffc57a
 }
 
-#tracks .content .track-div .track-header-div {
+#logistics .content .logistic-div .logistic-header-div {
 	margin-bottom: 1vw;
 	padding-left: 1vw;
 	padding-right: 1vw;
 	border-radius: 40px
 }
 
-#tracks .content .track-div .track-header-div .track-label {
+#logistics .content .logistic-div .logistic-header-div .logistic-label {
 	font-size: 3vw;
 	margin-top: -2vw
 }
@@ -566,7 +566,7 @@ body .section#tracks {
 #cover .navbar .navbar-btn .modal .modal-content .modal-text-container .modal-header .modal-navbar .navbar-txt::after,
 .modal .modal-content .modal-text-container .modal-header .modal-navbar #cover .navbar .navbar-btn .navbar-txt::after,
 .modal .modal-content .modal-text-container .modal-header .modal-navbar .link-after,
-.modal .modal-content .modal-text-container .modal-header .modal-navbar .navbar-txt-track::after {
+.modal .modal-content .modal-text-container .modal-header .modal-navbar .navbar-txt-logistic::after {
 	content: "";
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -575,23 +575,23 @@ body .section#tracks {
 	background: #ffc57a
 }
 
-.modal .modal-content .modal-text-container .modal-header .modal-navbar .navbar-txt-track {
+.modal .modal-content .modal-text-container .modal-header .modal-navbar .navbar-txt-logistic {
 	font-size: larger;
 	font-weight: 400
 }
 
-.modal .modal-content .modal-text-container .modal-header .modal-navbar .navbar-txt-track::after {
+.modal .modal-content .modal-text-container .modal-header .modal-navbar .navbar-txt-logistic::after {
 	width: 0;
 	-webkit-transition: width .35s;
 	-o-transition: width .35s;
 	transition: width .35s
 }
 
-.modal .modal-content .modal-text-container .modal-header .modal-navbar .navbar-txt-track:hover::after {
+.modal .modal-content .modal-text-container .modal-header .modal-navbar .navbar-txt-logistic:hover::after {
 	width: 100%
 }
 
-.modal .modal-content .modal-text-container .modal-header .modal-navbar .navbar-txt-track:hover {
+.modal .modal-content .modal-text-container .modal-header .modal-navbar .navbar-txt-logistic:hover {
 	cursor: pointer
 }
 
@@ -695,9 +695,9 @@ body .section#tracks {
 }
 
 #cover .navbar .navbar-btn .link-after,
-#cover .navbar .navbar-btn .modal .modal-content .modal-text-container .modal-header .modal-navbar .navbar-txt-track::after,
+#cover .navbar .navbar-btn .modal .modal-content .modal-text-container .modal-header .modal-navbar .navbar-txt-logistic::after,
 #cover .navbar .navbar-btn .navbar-txt::after,
-.modal .modal-content .modal-text-container .modal-header .modal-navbar #cover .navbar .navbar-btn .navbar-txt-track::after {
+.modal .modal-content .modal-text-container .modal-header .modal-navbar #cover .navbar .navbar-btn .navbar-txt-logistic::after {
 	content: "";
 	display: -webkit-box;
 	display: -ms-flexbox;

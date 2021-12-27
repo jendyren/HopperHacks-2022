@@ -1,45 +1,46 @@
+let involved = document.getElementById("involved");
+let prize = document.getElementById("prize");
+let schedule = document.getElementById("schedule");
 
-let com = document.getElementById("com");
-let edu = document.getElementById("edu");
-let sus = document.getElementById("sus");
 
+let involvedMobile = document.getElementById("involved-mobile");
+let prizeMobile = document.getElementById("prize-mobile");
+let scheduleMobile = document.getElementById("schedule-mobile");
 
-let comMobile = document.getElementById("com-mobile");
-let eduMobile = document.getElementById("edu-mobile");
-let susMobile = document.getElementById("sus-mobile");
-
-let tracks = [
-  com,
-  edu,
-  sus,
-  comMobile,
-  eduMobile,
-  susMobile,
+let logistics = [
+  involved,
+  prize,
+  schedule,
+  involvedMobile,
+  prizeMobile,
+  scheduleMobile,
 ];
-// let tracksMobile = [];
+
 
 let lightLabelColor = "#ffc57a";
 let darkLabelColor = "#9470ff";
 let lightTextColor = "#63594c";
 let darkTextColor = "#f9f3e5";
 
-function showModal(track) {
+function showModal(logistic) {
   document.body.classList.toggle("modal-open");
   document.querySelector("html").style.overflow = "hidden";
-  let track_id = track.id;
-  let modal = document.getElementById(`${track_id}-modal`);
-  let description = document.getElementById(`${track_id}-description-text`);
-  let resources = document.getElementById(`${track_id}-resources`);
-  let questions = document.getElementById(`${track_id}-questions`);
-  let label = document.getElementById(`${track_id}-description`);
-  
+  let logistic_id = logistic.id;
+  let modal = document.getElementById(`${logistic_id}-modal`);
+  let description = document.getElementById(`${logistic_id}-column1-text`);
+  let resources = document.getElementById(`${logistic_id}-column3`);
+  let questions = document.getElementById(`${logistic_id}-column2`);
+  let label = document.getElementById(`${logistic_id}-column1`);
+  if (!logistic_id.includes("mobile")) {	
+    description.style.display = "block";
+  }
   modal.style.display = "flex";
   
 }
 
-tracks.forEach((track) => {
-  track.addEventListener("click", () => {
-    showModal(track);
+logistics.forEach((logistic) => {
+  logistic.addEventListener("click", () => {
+    showModal(logistic);
   });
 });
 
@@ -67,10 +68,10 @@ for (let i = 0; i < modals.length; i++) {
 
 //navbars
 let navbars = document.getElementsByClassName("modal-navbar");
-let navbar_labels = document.getElementsByClassName("navbar-txt-track");
+let navbar_labels = document.getElementsByClassName("navbar-txt-logistic");
 for (let i = 0; i < navbars.length; i++) {
   navbars[i].addEventListener("click", (event) => {
-    if (event.target.className == "navbar-txt-track") {
+    if (event.target.className == "navbar-txt-logistic") {
       for (let i = 0; i < navbar_labels.length; i++) {
         navbar_labels[i].style.color = lightTextColor;
       }
