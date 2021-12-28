@@ -1007,6 +1007,116 @@ body .section#logistics {
 	box-shadow: 0 0 50px 1px #fff
 }
 
+body .section#faq {
+	margin: 0 2.5vw;
+
+
+}
+
+.faq-columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+
+.faq-columns .column {
+	flex: 1;
+	border: 1px solid gray;
+	margin: 2px;
+	padding: 10px;	
+	text-align: center;
+}
+
+.faq-columns column :first-child {
+	margin-left: 0;
+}
+.faq-columns column :last-child {
+	margin-right: 0;
+}
+
+@media screen and (max-width: 980px) {
+  	.faq-columns .column {
+		margin-bottom: 5px;
+    	flex-basis: 40%;
+	}
+	.faq-columns .column :nth-last-child(2){
+		margin-right: 0;
+	}
+	.faq-columns .column :last-child{
+		flex-basis: 100%;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.faq-columns .column {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+
+.faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 75%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 80%; 
+   padding: auto;
+   
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #F9F9F9;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+
+
+
 
 /*!
  * Hamburgers
