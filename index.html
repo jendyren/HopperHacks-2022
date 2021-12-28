@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<img class="clouds-bg" src="/~wics/hopperhacks/2022/images/bg_1.svg">
+	<img class="clouds-bg" src="/~wics/hopperhacks/2022/images/bg_2.svg">
 	<div id="cover" class="section">
 		<div class="content">
 			<div id="cover-desktop">
@@ -112,7 +112,7 @@
 		</div>
 	</div>
 	<div id="about" class="section">
-		<h1 class="header">ABOUT</h1>
+		<h1 class="header" id="about-header">ABOUT</h1>
 		<div class="about-wrap">
 			<!---info--->
 			<div class="info-wrap">
@@ -129,14 +129,17 @@
 		</div>
     </div>
 	<div id="logistics" class="section">
-        <h1 class="header">LOGISTICS</h1>
+        <h1 class="header" id="logistics-header">LOGISTICS</h1>
         <div class="content">
             <div class="logistic-row">
                <div class="logistic-div" id="involved">
-                  <img
-                     class="logistic-image"
-                     src="/~wics/hopperhacks/2022/images/getInvolved.svg"
+                  	<img
+						class="logistic-image"
+						src="/~wics/hopperhacks/2022/images/getInvolved.svg"
                      />
+					<p>
+						Check out the ways in which you can get involved with HopperHacks!
+					</p>
                </div>
             </div>
             <div class="logistic-row" id="logistic-row-2">
@@ -145,12 +148,18 @@
 					class="logistic-image"
 					src="/~wics/hopperhacks/2022/images/prizes.svg"
 					/>
+					<p>
+						Learn more about our prize categories and free swag!
+					</p>
                </div>
                <div class="logistic-div" id="schedule">
 					<img
 					class="logistic-image"
 					src="/~wics/hopperhacks/2022/images/schedule.svg"
 					/>
+					<p>
+						Check out some of the amazing events scheduled!
+					</p>
                </div>
             </div>
             <!-- mobile logistics -->
@@ -179,7 +188,7 @@
         </div>
       
       <!-- desktop modals -->
-		<!-- community desktop -->
+		<!-- Involved desktop -->
 		<div class="modal" id="involved-modal" style="display: none">
 			<div class="modal-content">
 				<div class="modal-text-container">
@@ -292,7 +301,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- edu desktop -->
+		<!-- prizes desktop -->
 		<div class="modal" id="prize-modal" style="display: none">
 			<div class="modal-content">
 				<div class="modal-text-container">
@@ -461,9 +470,8 @@
 			</div>
 		</div>
 
-
       <!-- mobile modals -->
-		<!-- getInvolved modal -->
+		<!-- Involved mobile -->
         <div class="mobile modal" id="involved-mobile-modal" style="display: none">
            <div class="modal-content">
               <img
@@ -545,7 +553,7 @@
               </div>
            </div>
         </div>
-        <!-- education -->
+        <!-- Prizes Mobile -->
         <div class="mobile modal" id="prize-mobile-modal" style="display: none">
            <div class="modal-content">
               <img
@@ -624,7 +632,7 @@
               </div>
            </div>
         </div>
-        <!-- scheduletainability mobile -->
+        <!-- Schedule mobile -->
         <div class="mobile modal" id="schedule-mobile-modal" style="display: none">
            <div class="modal-content">
               <img
@@ -660,6 +668,10 @@
            </div>
         </div>
 	</div>
+	<div id="faq" class="section">
+		<h1 class="header" id="faq-header">FAQs</h1>
+	</div>
+
 
     <script src="/~wics/hopperhacks/2022/scripts/script.js"></script>
 	<script src="/~wics/hopperhacks/2022/scripts/logistics.js"></script>

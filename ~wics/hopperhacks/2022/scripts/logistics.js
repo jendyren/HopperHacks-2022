@@ -1,8 +1,6 @@
 let involved = document.getElementById("involved");
 let prize = document.getElementById("prize");
 let schedule = document.getElementById("schedule");
-
-
 let involvedMobile = document.getElementById("involved-mobile");
 let prizeMobile = document.getElementById("prize-mobile");
 let scheduleMobile = document.getElementById("schedule-mobile");

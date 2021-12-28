@@ -3,6 +3,7 @@
   --white: #ffffff;
   --pink: #FA91D4;
   --yellow: #FFF2C7;
+  --black: black;
 }
 
 @font-face {
@@ -98,19 +99,37 @@ body {
 	font-family: Hero;
 	width: 100vw;
   	margin: 0;
-	background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%) fixed no-repeat;
+	/* background: linear-gradient(to top, #FFBEF5 0%, #C6E5FF 95%) fixed no-repeat; */
+	/* background: rgb(255,190,190);
+	background: linear-gradient(349deg, rgba(255,190,190,1) 0%, rgba(255,190,245,1) 35%, rgba(198,229,255,1) 100%); */
+	/* background: rgb(198,229,255);
+	background: linear-gradient(158deg, rgba(198,229,255,1) 0%, rgba(205,198,255,1) 20%, rgba(255,190,245,1) 40%, rgba(255,190,190,1) 60%, rgba(255,190,245,1) 80%, rgba(198,229,255,1) 100%); */
+	background: rgb(198,229,255);
+	background: linear-gradient(170deg, rgba(198,229,255,1) 0%, rgba(255,190,245,1) 15%, rgba(205,198,255,1) 30%, rgba(255,190,245,1) 45%, rgba(255,190,190,1) 60%, rgba(255,190,245,1) 75%, rgba(198,229,255,1) 90%);
 }
 
-body .header{
-	text-align: left;
-    padding-top: 3.53vw;
+body .header#about-header {
+    padding-top: 10vw;
+    text-align: left;
+    padding-left: 10vw;
+}
+
+body .header {
+    text-align: center;
     font-size: 5vw;
     color: var(--yellow);
     text-transform: uppercase;
     -webkit-text-stroke: 1.5px black;
-    padding-left: 10vw;
-
 }
+
+body .header#logistics-header{
+	padding-top: 6.5vw;
+}
+
+body .header#faq-header{
+	padding-top: 5.5vw;
+}
+
 
 @media (max-width:576px) {
 	body .header{
@@ -131,7 +150,7 @@ body .section {
 
 
 body .section#cover {
-    min-height: 70.6vw;
+    min-height: 60.6vw;
 }
 
 @media (max-width:576px) {
@@ -184,7 +203,7 @@ body .clouds-bg{
 
 
 body .section#about {
-	min-height: 38.83vw
+	min-height: 48.83vw
 }
 
 @media (max-width:576px) {
@@ -219,7 +238,7 @@ body .section#about {
 	font-weight: 300;
 	line-height: 1.5;
 	font-size: 1.5vw;
-	color: black;
+	color: var(--black);
 	width: 63vw
 }
 
@@ -230,8 +249,15 @@ body .section#about {
 	}
 }
 
+body .logistic-div p {
+    color: var(--black);
+    width: 23vw;
+    margin-top: 10px;
+    text-align: center;
+}
+
 body .section#logistics {
-	min-height: 70.6vw
+	min-height: 55.6vw
 }
 
 @media (max-width:576px) {
@@ -253,7 +279,9 @@ body .section#logistics {
 	justify-content: center;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
-	align-items: center
+	align-items: center;
+	margin: 0 15vw;
+
 }
 
 @media (max-width:576px) {
@@ -317,12 +345,12 @@ body .section#logistics {
 }
 
 #logistics .content .logistic-row#logistic-row-2 {
-	margin-top: 6vw
+	margin-top: 0vw;
 }
 
 @media (max-width:576px) {
 	#logistics .content .logistic-row {
-		display: none
+		display: none;
 	}
 }
 
