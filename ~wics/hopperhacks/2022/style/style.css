@@ -126,8 +126,14 @@ body .header#logistics-header{
 	padding-top: 6.5vw;
 }
 
-body .header#faq-header{
-	padding-top: 5.5vw;
+.faq-content{
+	padding-top: 3.5vw;
+}
+
+.faq-box{
+	background: #FFECFC;
+	border: 10px solid var(--yellow);
+	padding: 2vw 0;
 }
 
 
@@ -1022,8 +1028,9 @@ body .section#faq {
 
 .faq-columns .column {
 	flex: 1;
-	border: 1px solid gray;
-	margin: 2px;
+	border: 10px solid var(--pink);
+	border-radius: 5px;
+	margin: 1vw;
 	padding: 10px;	
 	text-align: center;
 }
