@@ -115,8 +115,6 @@ body .header#about-header {
 }
 
 body .header#sponsors-header{
-    text-align: left;
-    padding-left: 10vw;
 	padding-top: 3vw;
 }
 
@@ -152,6 +150,22 @@ body .header#logistics-header{
 	margin-bottom: 20px;
 }
 
+.rectangle#end {
+    height: 50px;
+    width: 15vw;
+    background-color: var(--pink);
+    color: var(--white);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: HeroBold;
+    font-size: 1.5vw;
+    position: relative;
+    bottom: 20vw;
+    left: 65vw;
+}
+
 
 @media (max-width:576px) {
 	body .header{
@@ -175,17 +189,16 @@ body .section#cover {
     min-height: 60.6vw;
 }
 
-body .section#sponsors{
-	position: relative;
-	top: -3vw;
-}
-
 @media (max-width:576px) {
 	body .section#cover {
 		min-height: 216vw
 	}
 }
 
+img .gold{
+	
+	width:1vw;
+}
 
 body .clouds-bg{
 	position: absolute;
@@ -423,6 +436,10 @@ body .logistic-div p {
 
 body .section#logistics {
 	min-height: 55.6vw
+}
+
+body .section#faq{
+	min-height: 57.5vw;
 }
 
 @media (max-width:576px) {
@@ -1174,8 +1191,10 @@ body .section#logistics {
 
 body .section#faq {
 	margin: 0 2.5vw;
+}
 
-
+body .section#sponsors {
+	min-height: 80vw;
 }
 
 .faq-columns {
@@ -1197,6 +1216,21 @@ body .section#faq {
 	margin-left: 0;
 }
 .faq-columns column :last-child {
+	margin-right: 0;
+}
+
+.sponsors-columns .column {
+	flex: 1;
+	border-radius: 5px;
+	margin: 1vw;
+	padding: 10px;	
+	text-align: center;
+}
+
+.sponsors-columns column :first-child {
+	margin-left: 0;
+}
+.sponsors-columns column :last-child {
 	margin-right: 0;
 }
 
@@ -1224,6 +1258,21 @@ body .section#faq {
 	}
 }
 
+.sponsors-container{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+		
+}
+.sponsors-columns{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px auto;
+	width: 60vw;
+}
+
+
 .faq-heading{
     border-bottom: #777;
     padding: 20px 60px;
@@ -1236,7 +1285,6 @@ flex-direction: column;
 .hr-line{
   width: 60%;
   margin: auto;
-  
 }
 /* Style the buttons that are used to open and close the faq-page body */
 .faq-page {
