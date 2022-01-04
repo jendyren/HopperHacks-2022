@@ -150,6 +150,28 @@ body .header#logistics-header{
 	margin-bottom: 20px;
 }
 
+.socials .socials-row:hover{
+	opacity:0.7;
+}
+
+.socials-row{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 10px;
+}
+
+.socials-row p{
+	margin: 0;
+    padding: 10px 15px;
+}
+
+.socials{
+	width: 30vw;
+	position: relative;
+    bottom: 13vw;
+    left: 65vw;
+}
+
 .rectangle#end {
     height: 50px;
     width: 15vw;
@@ -162,7 +184,7 @@ body .header#logistics-header{
     font-family: HeroBold;
     font-size: 1.5vw;
     position: relative;
-    bottom: 20vw;
+    bottom: 15vw;
     left: 65vw;
 }
 
